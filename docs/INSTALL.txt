@@ -1,0 +1,17 @@
+mingtak.content Installation
+----------------------------
+
+To install mingtak.content using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``mingtak.content`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        mingtak.content
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
