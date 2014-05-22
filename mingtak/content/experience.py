@@ -21,15 +21,22 @@ from mingtak.content import MessageFactory as _
 
 
 class IExperience(form.Schema, IImageScaleTraversable):
+
     siteUrl = schema.URI(
         title=_(u'site url'),
         description=_(u'usite url, must includeing string http://.'),
         required=False,
     )
 
-    detail = schema.Text(
+    detail = RichText(
         title=_(u'detail description'),
         description=_(u'Text block, detail more information'),
+        required=True,
+    )
+
+    miniImage = NamedBlobImage(
+        title=_(u'website capture image, w:h must be 2:1'),
+        description=_(u'Website capture image, please upload, w:h=2:1.'),
         required=True,
     )
 
@@ -48,5 +55,4 @@ class Experience(Container):
 class SampleView(grok.View):
     grok.context(IExperience)
     grok.require('zope2.View')
-
-    # grok.name('view')
+    grok.name('view')

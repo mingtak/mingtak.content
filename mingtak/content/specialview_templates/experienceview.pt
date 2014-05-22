@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="mingtak.content">
+<body>
+
+<tal:comment tal:condition="nothing">
+    This is a sample view template. It will not be used for rendering the
+    content unless activated by creation of a view class with a matching name.
+</tal:comment>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+
+<section class="line">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="title">Experience</div>
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="title-content less-margin">
+網站是客戶對您的第一印象，還在用傳統的方式架站嗎？何不，讓我們協助你，建立獨具特色的網站風格體驗。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="line">
+    <div class="container">
+        <div class="row">
+        
+<tal:getBrain define="catalog python:context.portal_catalog;
+                      brain python:catalog(portal_type='mingtak.content.experience', sort_on='created', sort_order='reverse')">
+  <tal:getItem repeat="item brain">
+    <tal:getObject define="object python:item.getObject()">
+
+            <div class="col-sm-4 isotopeSelector web-design">
+                <div class="portfolio-post">
+                    <figure>
+                        <a tal:attributes="href item/getURL"><img tal:replace="structure object/@@images/miniImage/preview" /></a>
+                        <div class="overlay">
+                            <div class="inner">
+                                <a tal:attributes="href item/getURL">
+                                    <div class="oldal-icon grey-icon fill-icon sm-icon">
+                                        <i class="entyp-forward-1"></i>
+                                    </div>
+                                </a>
+<tal:getHref define='string object/@@images/image/preview;
+                     hrefString python:string.split("\"")[1]'>
+                                <a tal:attributes="href hrefString" class="fancybox-product">
+                                    <div class="oldal-icon grey-icon fill-icon sm-icon">
+                                        <i class="entyp-search-1"></i>
+                                    </div>
+                                </a>
+</tal:getHref>
+                            </div>
+                            <div class="background"></div>
+                        </div>
+                    </figure>
+                    <h4><strong><a tal:attributes="href item/getURL">
+                                   <tal:title replace="item/Title">the port of Yokohama</tal:title>
+                                </a></strong>
+                    </h4>
+                    <p  tal:content="item/Description">Responsive Design</p>
+                </div>
+            </div>
+
+    </tal:getObject>
+  </tal:getItem>
+</tal:getBrain>
+
+        </div>
+    </div>
+</section>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+

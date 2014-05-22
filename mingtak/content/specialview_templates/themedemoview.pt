@@ -1,0 +1,139 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="mingtak.content">
+<body>
+
+<tal:comment tal:condition="nothing">
+    This is a sample view template. It will not be used for rendering the
+    content unless activated by creation of a view class with a matching name.
+</tal:comment>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+<tal:getBrain define="catalog python:context.portal_catalog;
+                      brain python:catalog(portal_type='mingtak.content.themedemo',
+                                           sort_on='created', sort_order='reverse')">
+
+
+<section class="line">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="title">Show Time</div>
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="title-content less-margin">
+網站是您與世界連結的門面，外表體面了，商機自然就來了。想擁有獨具一格的網頁設計嗎？我們特與國外頂尖設計師合作，就是想讓你與眾不同。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="line">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="product-list">
+                    <div class="col-sm-8">
+                        <div class="products">
+
+<tal:getItem repeat="item brain">
+  <tal:getObject define="object python:item.getObject()">
+
+                            <div class="col-sm-4">
+                                <div class="product">
+                                    <br/><br/>
+                                    <div class="product-name">名稱:<span tal:replace="item/Title"/></div>
+                                    <p>編號:<span tal:replace="object/themeId"/></p>
+                                    <figure>
+                                        <img tal:replace="structure object/@@images/captureImage/themedemo" />
+                                        <div class="overlay">
+                                            <div class="overlay-info">
+                                                <div class="inner">
+<tal:getHref define='string object/@@images/captureImage/large;
+                     hrefString python:string.split("\"")[1]'>
+                                <a tal:attributes="href hrefString" class="fancybox-product">
+                                    <div class="oldal-icon grey-icon fill-icon sm-icon">
+                                        <i class="entyp-search-1"></i>
+                                    </div>
+                                </a>
+</tal:getHref>
+<hr>
+                                <a tal:attributes="href item/getURL">
+                                    <div class="oldal-icon grey-icon fill-icon sm-icon">
+                                        <i class="entyp-forward-1"></i>
+                                    </div>
+                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="background"></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+  </tal:getObject>
+</tal:getItem>
+
+                        </div>
+                    </div>
+
+<!-- google ad -->
+                <div class="col-sm-4">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 336X280TwTour -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9621066722313042"
+     data-ad-slot="3910699872"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<hr>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 336X280TwTour -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9621066722313042"
+     data-ad-slot="3910699872"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<hr>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 336X280TwTour -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9621066722313042"
+     data-ad-slot="3910699872"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+                </div>
+<!-- google ad end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</tal:getBrain>
+
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+

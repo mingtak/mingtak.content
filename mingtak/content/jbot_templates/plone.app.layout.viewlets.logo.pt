@@ -1,0 +1,37 @@
+<tal:checkRole condition="python:not request['AUTHENTICATED_USER'].has_role('Manager')">
+        <div class="container" id="mingtak_logo">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><img src="logo.jpg" alt="" tal:replace="structure view/logo_tag" /></a>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="navbar-collapse collapse navbar-right">
+                        <ul class="nav navbar-nav social-nav">
+                            <li><a href="#"><i class="entyp-facebook-1"></i></a></li>
+                            <li><a href="#"><i class="entyp-gplus-1"></i></a></li>
+                            <li><a href="#"><i class="entyp-rss-1"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</tal:checkRole>
+
+<tal:checkRole condition="python:request['AUTHENTICATED_USER'].has_role('Manager')">
+<a id="portal-logo"
+   title="Home"
+   accesskey="1"
+   tal:attributes="href view/navigation_root_url;
+                   title view/navigation_root_title"
+   i18n:domain="plone"
+   i18n:attributes="title">
+    <img src="logo.jpg" alt=""
+         tal:replace="structure view/logo_tag" /></a>
+</tal:checkRole>

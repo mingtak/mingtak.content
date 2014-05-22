@@ -1,0 +1,135 @@
+<tal:checkRole condition="python:not request['AUTHENTICATED_USER'].has_role('Manager')">
+  <tal:getItem define="catalog python:view.context.portal_catalog;
+                       item python:catalog(portal_type='mingtak.content.homeslide')[0].getObject()">
+    <div class="header-slider" id="mingtak_slider">
+        <div id="revolution-shortcode" class="revolution-wrap">
+            <ul>
+                <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1100">
+                    <img tal:replace="structure item/@@images/slide_1_Image" />
+                    <div class="tp-caption fade stb rev-caption"
+                         data-x="center"
+                         data-y="center"
+                         data-hoffset="0"
+                         data-voffset="-1"
+                         data-speed="800"
+                         data-start="1300"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="big-inner">
+                                        <h2 tal:content="item/slide_1_Title">Welcome to Oldal</h2>
+                                        <p tal:content="item/slide_1_Text">The civil Emperor, before the Mikado, the spiritual Emperor, absorbed his office in his own.  The Carnatic anchored at the quay near the custom-house, in the midst of a crowd of ships bearing the flags of all</p>
+                                        <a class="btn btn-default" tal:content="item/slide_1_ButtonText"
+                                                                   tal:attributes="href item/slide_1_ButtonUrl">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li data-transition="random" data-slotamount="7" data-masterspeed="1100">
+                    <img tal:replace="structure item/@@images/slide_2_Image" />
+                    <div class="tp-caption fade stb rev-caption"
+                         data-x="center"
+                         data-y="center"
+                         data-hoffset="0"
+                         data-voffset="-1"
+                         data-speed="800"
+                         data-start="1300"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="big-inner">
+                                        <h2 tal:content="item/slide_2_Title">A Bold Responsive Design</h2>
+                                        <p tal:content="item/slide_2_Text">The civil Emperor, before the Mikado, the spiritual Emperor, absorbed his office in his own.  The Carnatic anchored at the quay near the custom-house, in the midst of a crowd of ships bearing the flags of all</p>
+                                        <a class="btn btn-default" tal:content="item/slide_2_ButtonText"
+                                                                   tal:attributes="href item/slide_2_ButtonUrl">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li data-transition="random" data-slotamount="7" data-masterspeed="1100">
+                    <img tal:replace="structure item/@@images/slide_3_Image" />
+                    <div class="tp-caption fade stb rev-caption"
+                         data-x="center"
+                         data-y="center"
+                         data-hoffset="0"
+                         data-voffset="-1"
+                         data-speed="800"
+                         data-start="1300"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="big-inner">
+                                        <h2 tal:content="item/slide_3_Title">Loaded With Features</h2>
+                                        <ul tal:content="structure item/slide_3_Text">
+                                   	    <li><i class="entyp-right-open-mini"></i> Responsive Layout (Bootstrap)</li>
+                                            <li><i class="entyp-right-open-mini"></i> Retina Icons</li>
+                                            <li><i class="entyp-right-open-mini"></i> Multiple Portfolios</li>
+                                            <li><i class="entyp-right-open-mini"></i> Instagram Feed</li>
+                                            <li><i class="entyp-right-open-mini"></i> Revolution Slider</li>
+                                            <li><i class="entyp-right-open-mini"></i> Fancybox 2</li>
+                                            <li><i class="entyp-right-open-mini"></i> Multiple Blog Post Formats</li>
+                                            <li><i class="entyp-right-open-mini"></i> Multiple Footer Styles</li>
+                                            <li><i class="entyp-right-open-mini"></i> Product Layouts</li>
+                                            
+                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li data-transition="random" data-slotamount="7" data-masterspeed="1100">
+                    <img tal:replace="structure item/@@images/slide_4_Image" />
+                    <div class="tp-caption fade stb rev-caption"
+                         data-x="center"
+                         data-y="center"
+                         data-hoffset="0"
+                         data-voffset="-1"
+                         data-speed="800"
+                         data-start="1300"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="big-inner">
+                                        <h2 tal:content="item/slide_4_Title">Loaded With Features</h2>
+                                        <p tal:content="structure item/slide_4_Text">The civil Emperor, before the Mikado, the spiritual Emperor, absorbed his office in his own.  The Carnatic anchored at the quay near the custom-house, in the midst of a crowd of ships bearing the flags of all</p>
+                                        <a class="btn btn-default" tal:content="item/slide_4_ButtonText"
+                                                                   tal:attributes="href item/slide_4_ButtonUrl">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </tal:getItem>
+</tal:checkRole>

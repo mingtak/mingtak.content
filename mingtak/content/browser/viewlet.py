@@ -10,5 +10,6 @@ grok.context(Interface)
 grok.templatedir('viewlet_templates')
 
 
-
+class MingtakHomeSlider(grok.Viewlet):
+    grok.viewletmanager(IPortalHeader)
 #下列可再新增viewlet, 可用的interface可查詢 plone.app.layout.viewlets.interfaces

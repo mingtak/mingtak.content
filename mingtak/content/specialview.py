@@ -56,12 +56,23 @@ class SpecialView(Container):
 # of this type by uncommenting the grok.name line below or by
 # changing the view class name and template filename to View / view.pt.
 
+
 class SampleView(grok.View):
-    """ sample view class """
 
     grok.context(ISpecialView)
     grok.require('zope2.View')
+    grok.name('view')
 
-    # grok.name('view')
 
-    # Add view methods here
+class ExperienceView(grok.View):
+
+    grok.context(ISpecialView)
+    grok.require('zope2.View')
+    grok.name('experienceview')
+
+
+class ThemeDemoView(grok.View):
+
+    grok.context(ISpecialView)
+    grok.require('zope2.View')
+    grok.name('themedemoview')

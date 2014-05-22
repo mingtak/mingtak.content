@@ -8,6 +8,7 @@
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
   <!-- -*- extra stuff goes here -*- -->
+  <object name="mingtak.content.homeslide" meta_type="Dexterity FTI" />
   <object name="mingtak.content.themedemo" meta_type="Dexterity FTI" />
   <object name="mingtak.content.experience" meta_type="Dexterity FTI" />
   <object name="mingtak.content.specialview" meta_type="Dexterity FTI" />

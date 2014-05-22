@@ -42,7 +42,7 @@ class IThemeDemo(form.Schema, IImageScaleTraversable):
 
     captureImage = NamedBlobImage(
         title=_(u'Capture Image'),
-        description=_(u'The demo site capture image, please upload full size image'),
+        description=_(u'The demo site capture image, please upload full size image, must be w:h=1:2'),
         required=True,
     )
 
@@ -75,4 +75,4 @@ class SampleView(grok.View):
     grok.context(IThemeDemo)
     grok.require('zope2.View')
 
-    # grok.name('view')
+    grok.name('view')

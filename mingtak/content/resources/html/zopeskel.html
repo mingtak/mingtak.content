@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PLONE 的模組開發框架： zopeskel &mdash; Plone開發手冊 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Plone開發手冊 1.0 documentation" href="index.html" />
+    <link rel="next" title="使用 zopeskel 開啟新模組" href="zopeskel_initial.html" />
+    <link rel="prev" title="Plone 技術手冊" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="zopeskel_initial.html" title="使用 zopeskel 開啟新模組"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Plone 技術手冊"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Plone開發手冊 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="plone-zopeskel">
+<h1>PLONE 的模組開發框架： zopeskel<a class="headerlink" href="#plone-zopeskel" title="Permalink to this headline">¶</a></h1>
+<p>zopeskel是plone預設使用的開發框架工具，可以完整的將所需要的工能，預先執行，包括：</p>
+<blockquote>
+<div><ul class="simple">
+<li>登錄zcml,</li>
+<li>預先載入(import)相關模組,</li>
+<li>預先定義相關class,</li>
+<li>profile預先設定,</li>
+</ul>
+</div></blockquote>
+<p>等等各項，讓開發者可以直接進入開發程序，不用進行繁瑣的例行設定</p>
+<p>zopeskel在plone 4.3之後被正式收錄，但預設未啟動，必需執行：</p>
+<div class="highlight-python"><div class="highlight"><pre>bin/plonectl -Nc develop.cfg
+</pre></div>
+</div>
+<p>執行後在bin目錄底下，會新增zopeskel及其相關指令，我們會在之後一一介紹使用方法。</p>
+<div class="section" id="id1">
+<h2>目錄<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="zopeskel_initial.html">使用 zopeskel 開啟新模組</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zopeskel_paster.html">使用 paster 新增content type / behavior</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">PLONE 的模組開發框架： zopeskel</a><ul>
+<li><a class="reference internal" href="#id1">目錄</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Plone 技術手冊</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="zopeskel_initial.html"
+                        title="next chapter">使用 zopeskel 開啟新模組</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/zopeskel.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="zopeskel_initial.html" title="使用 zopeskel 開啟新模組"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Plone 技術手冊"
+             >previous</a> |</li>
+        <li><a href="index.html">Plone開發手冊 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, 銘啟科技.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

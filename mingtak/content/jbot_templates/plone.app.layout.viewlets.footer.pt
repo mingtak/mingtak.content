@@ -1,0 +1,81 @@
+<tal:checkRole condition="python:not request['AUTHENTICATED_USER'].has_role('Manager')">
+<footer class="main-footer" i18n:domain="mingtak.content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h2>寶貴意見</h2>
+
+
+<tal:block tal:replace="structure here/7cfb7d718cc76e90/5bf68cb4610f898b/@@embedded"/>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h2>聯絡方式</h2>
+                    <div class="widget-content">
+                        <address>
+                            <strong><i class="entyp-home-1"></i> : 112 台北市北投區大興街 9 巷 13 號</strong> <p></p>
+                            <strong><i class="entyp-phone-1"></i> :  (02) 2897-3942</strong> <p></p>
+                            <strong><i class="entyp-print-1"></i> :  (02) 2897-3937</strong> <p></p>
+                            <strong><i class="entyp-mail-1"></i> : <a href="mailto:service@mingtak.com.tw">service@mingtak.com.tw</a></strong>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h2>公司位置</h2>
+                    <div class="widget-content instagram">
+                        <div class="row">
+<iframe width="300" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E9%8A%98%E5%95%9F%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;aq=&amp;sll=25.130958,121.498393&amp;sspn=0.002453,0.005284&amp;brcurrent=3,0x3442ae741e185a49:0x8c8db93eb1d0d2b6,0,0x3442ac6b61dbbd9d:0xc0c243da98cba64b&amp;ie=UTF8&amp;hq=%E9%8A%98%E5%95%9F%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;hnear=&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=15344839518567048170&amp;ll=25.130361,121.497429&amp;output=embed"></iframe>
+<!--                            <div class="insta"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-info text-right">
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="entyp-facebook-1"></i></a></li>
+                        <li><a href="#"><i class="entyp-gplus-1"></i></a></li>
+                        <li><a href="#"><i class="entyp-rss-1"></i></a></li>
+                    </ul>
+                    <p>Copyright © 2003-<tal:year replace="view/year"></tal:year></p>
+                    <p>銘啟科技 - All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</tal:checkRole>
+
+
+<tal:checkRole condition="python:request['AUTHENTICATED_USER'].has_role('Manager')">
+<div i18n:domain="plone"
+     id="portal-footer">
+          <p>
+               <span i18n:translate="description_copyright" tal:omit-tag="">
+               The
+               <span i18n:name="plonecms" tal:omit-tag="">
+                    <a href="http://plone.org" i18n:translate="label_plone_cms">Plone<sup>&reg;</sup> Open Source CMS/WCM</a>
+               </span>
+               is
+               <abbr title="Copyright" i18n:name="copyright" i18n:attributes="title title_copyright;">&copy;</abbr>
+               2000-<tal:year i18n:name="current_year" tal:content="view/year" />
+               by the
+               <span i18n:name="plonefoundation" tal:omit-tag="">
+                    <a href="http://plone.org/foundation" i18n:translate="label_plone_foundation">Plone Foundation</a></span>
+               and friends.
+               </span>
+
+               <span i18n:translate="description_license" tal:omit-tag="">
+               Distributed under the
+                    <span i18n:name="license" tal:omit-tag="">
+                         <a href="http://creativecommons.org/licenses/GPL/2.0/" i18n:translate="label_gnu_gpl_licence">GNU GPL license</a></span>.
+               </span>
+          </p>
+
+</div>
+</tal:checkRole>

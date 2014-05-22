@@ -52,6 +52,14 @@ def test_suite():
 
         # -*- extra stuff goes here -*-
 
+        # Integration tests for HomeSlide
+        ztc.ZopeDocFileSuite(
+            'HomeSlide.txt',
+            package='mingtak.content',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
         # Integration tests for ThemeDemo
         ztc.ZopeDocFileSuite(
             'ThemeDemo.txt',
