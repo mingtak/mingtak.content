@@ -29,7 +29,7 @@
                     <h2>公司位置</h2>
                     <div class="widget-content instagram">
                         <div class="row">
-<iframe width="300" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E9%8A%98%E5%95%9F%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;aq=&amp;sll=25.130958,121.498393&amp;sspn=0.002453,0.005284&amp;brcurrent=3,0x3442ae741e185a49:0x8c8db93eb1d0d2b6,0,0x3442ac6b61dbbd9d:0xc0c243da98cba64b&amp;ie=UTF8&amp;hq=%E9%8A%98%E5%95%9F%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;hnear=&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=15344839518567048170&amp;ll=25.130361,121.497429&amp;output=embed"></iframe>
+<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E9%8A%98%E5%95%9F%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;aq=&amp;sll=25.130958,121.498393&amp;sspn=0.002453,0.005284&amp;brcurrent=3,0x3442ae741e185a49:0x8c8db93eb1d0d2b6,0,0x3442ac6b61dbbd9d:0xc0c243da98cba64b&amp;ie=UTF8&amp;hq=%E9%8A%98%E5%95%9F%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;hnear=&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=15344839518567048170&amp;ll=25.130361,121.497429&amp;output=embed"></iframe>
 <!--                            <div class="insta"></div> -->
                         </div>
                     </div>
@@ -38,9 +38,9 @@
             <div class="col-sm-3">
                 <div class="footer-info text-right">
                     <ul class="footer-social">
-                        <li><a href="#"><i class="entyp-facebook-1"></i></a></li>
-                        <li><a href="#"><i class="entyp-gplus-1"></i></a></li>
-                        <li><a href="#"><i class="entyp-rss-1"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/mingtak.company"><i class="entyp-facebook-1"></i></a></li>
+                        <li><a target="_blank" href="https://plus.google.com/113496602871198125124/posts"><i class="entyp-gplus-1"></i></a></li>
+                        <li><a href="RSS#"><i class="entyp-rss-1"></i></a></li>
                     </ul>
                     <p>Copyright © 2003-<tal:year replace="view/year"></tal:year></p>
                     <p>銘啟科技 - All rights reserved</p>

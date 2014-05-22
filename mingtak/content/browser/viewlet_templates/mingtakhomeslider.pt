@@ -5,7 +5,7 @@
         <div id="revolution-shortcode" class="revolution-wrap">
             <ul>
                 <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1100">
-                    <img tal:replace="structure item/@@images/slide_1_Image" />
+                    <img tal:replace="structure item/@@images/slide_1_Image/slider" />
                     <div class="tp-caption fade stb rev-caption"
                          data-x="center"
                          data-y="center"
@@ -34,7 +34,7 @@
                 </li>
                 
                 <li data-transition="random" data-slotamount="7" data-masterspeed="1100">
-                    <img tal:replace="structure item/@@images/slide_2_Image" />
+                    <img tal:replace="structure item/@@images/slide_2_Image/slider" />
                     <div class="tp-caption fade stb rev-caption"
                          data-x="center"
                          data-y="center"
@@ -63,7 +63,7 @@
                 </li>
                 
                 <li data-transition="random" data-slotamount="7" data-masterspeed="1100">
-                    <img tal:replace="structure item/@@images/slide_3_Image" />
+                    <img tal:replace="structure item/@@images/slide_3_Image/slider" />
                     <div class="tp-caption fade stb rev-caption"
                          data-x="center"
                          data-y="center"
@@ -101,7 +101,7 @@
                 </li>
                 
                 <li data-transition="random" data-slotamount="7" data-masterspeed="1100">
-                    <img tal:replace="structure item/@@images/slide_4_Image" />
+                    <img tal:replace="structure item/@@images/slide_4_Image/slider" />
                     <div class="tp-caption fade stb rev-caption"
                          data-x="center"
                          data-y="center"

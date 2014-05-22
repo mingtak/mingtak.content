@@ -40,7 +40,10 @@
             </div>
             <div class="col-sm-6 col-xs-12">
                 <div class="product-details">
-                    <div class="product-title" tal:content="context/Title">THERMAL ZIP NECK LS BASE</div>
+                    <div class="product-title">
+                      <span tal:content="context/Title" />  
+                      <span tal:content="string:編號:${context/themeId}" style="font-size:0.5em" />
+                    </div>
                     <p tal:content="context/Description">$80</p>
                     <div class="divider solid grey"></div>
                     <div class="description" tal:content="structure context/specification/raw">
@@ -66,6 +69,7 @@
                 <div class="product-selectors">
                     <div class="row">
                         <div class="col-xs-12">
+
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 大型摩天大廣告 -->

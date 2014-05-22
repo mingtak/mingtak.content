@@ -14,9 +14,9 @@
                 <div class="col-sm-9">
                     <div class="navbar-collapse collapse navbar-right">
                         <ul class="nav navbar-nav social-nav">
-                            <li><a href="#"><i class="entyp-facebook-1"></i></a></li>
-                            <li><a href="#"><i class="entyp-gplus-1"></i></a></li>
-                            <li><a href="#"><i class="entyp-rss-1"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/mingtak.company"><i class="entyp-facebook-1"></i></a></li>
+                            <li><a target="_blank" href="https://plus.google.com/113496602871198125124/posts"><i class="entyp-gplus-1"></i></a></li>
+                            <li><a href="RSS"><i class="entyp-rss-1"></i></a></li>
                         </ul>
                     </div>
                 </div>
