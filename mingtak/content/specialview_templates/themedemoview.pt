@@ -50,7 +50,7 @@
                             <div class="col-sm-4">
                                 <div class="product">
                                     <br/><br/>
-                                    <div class="product-name">名稱:<span tal:replace="item/Title"/></div>
+                                    <div class="product-name">名稱:<a tal:attributes="href item/getURL"><span tal:replace="item/Title"/></a></div>
                                     <p>編號:<span tal:replace="object/themeId"/></p>
                                     <figure>
                                         <img tal:replace="structure object/@@images/captureImage/themedemo" />
